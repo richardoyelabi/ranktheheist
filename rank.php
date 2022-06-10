@@ -87,11 +87,12 @@
          $array["Alicia Sierra"] = $alicia_score;
          
          arsort($array);
-         
-         $servername = "localhost";
-         $username = "root";
-         $password = "yOvZ9SKt0LWa";
-         $dbname = "bitnami_wordpress";
+
+         //MySQL Database Credentials
+         $servername = "servername";
+         $username = "username";
+         $password = "password";
+         $dbname = "database";
          
          // Create connection
          $conn = new mysqli($servername, $username, $password, $dbname);

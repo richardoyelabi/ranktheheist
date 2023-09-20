@@ -89,10 +89,10 @@
          arsort($array);
 
          //MySQL Database Credentials
-         $servername = "servername";
-         $username = "username";
-         $password = "password";
-         $dbname = "database";
+         $servername = $_SERVER["DB_SERVERNAME"];
+         $username = $_SERVER["DB_USERNAME"];
+         $password = $_SERVER["DB_PASSWORD"];
+         $dbname = $_SERVER["DB_NAME"];
          
          // Create connection
          $conn = new mysqli($servername, $username, $password, $dbname);
